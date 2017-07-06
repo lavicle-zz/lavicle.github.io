@@ -92,6 +92,9 @@
 
 
 
+  <meta property="fb:admins" content="100005763516488" />
+  <meta property="fb:app_id" content="1919029601670690" />
+
 
 
 <meta property="og:type" content="website">
@@ -140,6 +143,24 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1919029601670690',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -293,11 +314,11 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="fb-comments"
+           data-href="http://lavicle.github.io http://clavicle.coding.me/categories/index.html"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
       </div>
     
   </div>
@@ -500,26 +521,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://lavicle.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://lavicle.github.io http://clavicle.coding.me/categories/index.html';
-          this.page.identifier = 'categories/index.html';
-          this.page.title = 'Categories';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lavicle.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -538,6 +539,10 @@
   
 
 
+
+
+
+  
 
 
 
